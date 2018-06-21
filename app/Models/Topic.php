@@ -41,6 +41,7 @@ class Topic extends Model
 
     public function link($params = [])
     {
+        info('ss');
         return route('topics.show', array_merge([$this->id, $this->slug], $params));
     }
 }
